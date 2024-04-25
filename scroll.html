@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll To funksiyasıdır</title>
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/scroll.css" />
+  </head>
+  <body>
+    <header>
+      <!-----NAVBAR BASLADI-->
+      <div class="navbar">
+        <div class="menu">
+          <nav>
+            <ul>
+              <li class="items"><a href="index.html">Window obyekti </a></li>
+              <li class="items"><a href="new.html">Yeni pəncərə </a></li>
+              <li class="items"><a href="resize.html">Resize to funksiyasi</a></li>
+              <li class="items"><a href="scroll.html">Scroll to funksiyası</a></li>
+              <li class="items"><a href="page.html">Scroll pozisyası </a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-----NAVBAR BITDI-->
+    </header>
+    <main>
+      <section>
+        <div class="scroll">
+          <h1>Scroll to funksiyası</h1>
+          <br>
+          <p>
+            Bu obyekt daxilindəki lazımlı funksiyalardan biri də scrollTo
+            funksiyasıdır. Bu funksiya pəncərənin scrolunun mövqeyini dəyişmək
+            üçündür.
+          </p>
+        </div>
+        <body style="height: 2000px;" id="body">
+            <button onclick="funksiya();">Deyis</button>
+            <div class="scroll-img">
+
+               <figure>
+            <img src="./img/scroll.png" alt="" />
+            <figcaption>
+                <p>Şəkil 1. scrollTo funksiyasi pəncərənin scrolunun mövqeyini dəyişir</p>
+            </figcaption>
+          </figure>
+            </div>
+            <div class="scroll-funksiya">
+                <pre>function funksiya(){
+                    window.scrollTo(0,1000);
+                    }
+                    </pre>
+                
+            </div>
+            <div class="scroll-info">
+               
+                <p>Nəticədə düyməyə basdıqda scrolun aşağı endiyini görəcəyik. ScrollTo funksiyasındakı birinci parametr horizontal scrolun mövqeyini, ikinci parametr isə vertical scrolun mövqeyini bildirir. Yuxarıdakı nümunədə biz birinci parametri 0 olaraq qeyd etmişik. Bu o domekdir ki, horizontal scrolun qiyməti 0 olaraq qalaccaq, yəni, dəyişməyəcək. Vertical olaraq isə scrolun qiyməti 1000 olacaq, yəni aşağı enəcək. 
+                
+                <br>
+                Bəzi saytlarda scroll aşağı endikcə müxtəlif əməliyyatların baş verdiyini görə bilərik. Məsələn, bəzi xəbər saytlarında scroll aşağı endikcə daha çox xəbərlərin yükləndiyini görə bilərik. Bu tip əməliyyatlarda bu funksiyadan istifadə edə bilərik.
+
+            </p>
+            </div>
+            
+      </section>
+    </main>
+
+    <script src="./app/scroll.js"></script>
+  </body>
+</html>

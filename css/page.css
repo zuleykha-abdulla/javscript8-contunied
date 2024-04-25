@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+span {
+  color: pink;
+  font-size: xx-large;
+}
+button {
+  width: 230px;
+  height: 72px;
+  background-color: rgb(29, 30, 117);
+  border-radius: 67px;
+  border: 5px solid rgba(183, 232, 247, 0.87);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 20px;
+  padding: 10px;
+  cursor: pointer;
+  padding: 20px;
+}
+.poziya-pre,
+.en-pre,
+.print-pre,
+.cap-pre {
+  padding: 30px;
+  border-radius: 20px;
+  width: min-content;
+  height: min-content;
+  border: 5px solid white;
+  margin: 0 auto;
+}
+.poziya-pre pre,
+.en-pre pre,
+.print-pre pre,
+.cap-pre pre {
+  color: aliceblue;
+  font-size: x-large;
+  text-align: center;
+}
+.pozisiya-img,
+.print-img,
+.cap-img {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.pozisiya-img img,
+.print-img img,
+.cap-img img,
+.birhisse img {
+  max-width: 700px;
+  width: 100%;
+  border-radius: 10px;
+  border: 10px solid rgba(183, 232, 247, 0.87);
+}
+.pozisya,
+.en,
+.print,
+.birhisse {
+  padding: 30px;
+}
+
+#contentToPrint {
+  padding: 30px;
+}
+.cap-pre {
+  margin-top: 30px;
+}
+figure {
+  display: block;
+  margin: 0 auto;
+}
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+figcaption p {
+  text-align: center;
+  color: aliceblue;
+  font-size: large;
+  padding: 10px;
+}

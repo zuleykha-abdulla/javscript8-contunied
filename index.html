@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Window objekti</title>
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-----NAVBAR BASLADI-->
+      <div class="navbar">
+        <div class="menu">
+          <nav>
+            <ul>
+              <li class="items"><a href="index.html">Window obyekti </a></li>
+              <li class="items"><a href="new.html">Yeni pəncərə </a></li>
+              <li class="items"><a href="resize.html">Resize to funksiyasi</a></li>
+              <li class="items"><a href="scroll.html">Scroll to funksiyası</a></li>
+              <li class="items"><a href="page.html">Scroll pozisyası </a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-----NAVBAR BITDI-->
+    
+    </header>
+    <main>
+      <section>
+        <div class="window">
+          <h1>Window obyekti</h1>
+          <br />
+          <p>
+            Javascript daxilindəki bu obyekt brauzerdəki açılmış pəncərə ilə
+            işləmək üçün nəzərdə tutulur. Bu obyekt vasitəsilə mövcud pəncərə
+            ilə işləmək və onun haqqında məlumatları əldə etmək mümkündür.
+            Məsələn, window obyektindəki close() funksiyasını işlədərək açıq
+            olan pəncərəni bağlaya bilərik
+          </p>
+          <button onclick="bagla();">Pencereni bagla</button>
+
+          <div class="qeyd">
+            <pre>
+                    
+                function bagla(){
+                window.close();
+                }
+           
+                </pre
+            >
+          </div>
+     
+          <p>Nəticədə düyməyə basdıqda işlədiyimiz pəncərə bağlanmış olacaq.</p>
+        </div>
+        <div class="ac">
+          <h2>Open funksiyası</h2>
+          <br />
+          <p>
+            Mövcud pəncərəni bağlamaqdan əlavə yeni bir pəncərə də aça bilərik.
+            Bunun üçün open funksiyasından istifadə edə bilərik.
+          </p>
+        </div>
+     
+        <div class="open">
+          <pre>
+          function yeni(){
+          window.open("http://google.az");
+          }
+          </pre>
+        </div>
+<!-------------------------------------------------------->
+        <button onclick="yeni();">Yeni pencere aç</button>
+        <!------------------------------------------------->
+        <div class="open-img">
+          <figure>
+            <img src="./img/open.png" alt="" />
+            <figcaption>
+                <p>Şəkil 1. Google yeni  pəncərə açılacaq</p>
+            </figcaption>
+          </figure>
+        </div>
+
+      </div>
+      <!--------------------------------------------->
+        
+       
+      </section>
+    </main>
+    <script src="./app/script.js"></script>
+  </body>
+</html>

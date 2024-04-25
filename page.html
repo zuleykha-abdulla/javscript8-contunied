@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page</title>
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/page.css" />
+  </head>
+  <body>
+    <header>
+      <!-----NAVBAR BASLADI-->
+      <div class="navbar">
+        <div class="menu">
+          <nav>
+            <ul>
+              <li class="items"><a href="index.html">Window obyekti </a></li>
+              <li class="items"><a href="new.html">Yeni pəncərə </a></li>
+              <li class="items">
+                <a href="resize.html">Resize to funksiyasi</a>
+              </li>
+              <li class="items">
+                <a href="scroll.html">Scroll to funksiyası</a>
+              </li>
+              <li class="items"><a href="page.html">Scroll pozisyası </a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-----NAVBAR BITDI-->
+    </header>
+    <main>
+      <section>
+        <div class="pozisya">
+          <h1>Scrolun pozisyası</h1>
+          <br>
+          <p>
+            Səhifədə aşağı və ya sola getdikdən sonra bəzən scrolun pozisyasını
+            öyrənməyə ehtiyac duyulur. Bu zaman Səhifədə aşağı və ya sola
+            getdikdən sonra bəzən scrolun pozisyasını öyrənməyə ehtiyac duyulur.
+            Bu zaman <span>pageXOffset</span> və
+            <span>pageYOffset </span> xüsusiyyətlərindən istifadə etmək olar.
+          </p>
+        </div>
+        <body style="height: 2000px;" id="body">
+            <button onclick="funksiya();" style="position: 
+            fixed;">Deyis</button>
+            <div class="poziya-pre"> 
+                <pre>function funksiya(){
+                alert(window.pageYOffset);
+                }
+                </pre>
+            </div>
+            <div class="pozisiya-img">
+                <figure>
+                    <img src="./img/pozisiya.png" alt="" />
+                    <figcaption>
+                        <p>Şəkil 1. Scrolun pozisyası</p>
+                    </figcaption>
+                  </figure>
+            </div>
+            <hr>
+            <div class="en">
+                <h1>innerWidth və innerHeight xüsusiyyətləri</h1>
+                <br>
+                <p>Ehtiyac duyulan window obyekti xüsusiyyətlərindən biri də <span>innerWidth</span> və <span>innerHeight</span> xüsusiyyətləridir. Birinci xüsusiyyət pəncərənin enini, ikinci xüsusiyyət isə pəncərənin uzunluğunu göstərir. Bu ölçülərə padding məsafəsi daxildir, ancaq, çərçivə daxil deyil</p>
+            </div>
+            <div class="en-pre">
+                <pre>document.write(window.innerWidth + "<br>" + 
+                    window.innerHeight);
+                    </pre>
+                    <h4>Beləliklə pəncərənin en və uzunluğunu götürmüş oluruq.
+                    </h4>
+            </div>
+           
+            <div class="print">
+                <h1>print() funksiyası</h1>
+                <br>
+                <p>Bəzən səhifədə olan bir məlumatı çap etməyə ehtiyac duyula bilir. Bu zaman print() funksiyasından istifadə oluna bilir. </p>
+                <button onclick="cap();">Cap et</button>
+                <br>
+                <h4>Cap olunacaq....</h4>
+                <div class="print-pre">
+                    <pre>function cap(){
+                        window.print();
+                        }
+                        </pre>
+                        <h4>Beləliklə düyməyə basdıqda çap etmək üçün pəncərə açılacaq.
+                        </h4>
+                </div>
+                <div class="print-img">
+                    <figure>
+                        <img src="./img/print.png" alt="" />
+                        <figcaption>
+                            <p>Şəkil 2. Düyməyə basdıqda çap etmək üçün pəncərə açılacaq</p>
+                        </figcaption>
+                      </figure>
+                </div>
+                
+            </div>
+            <hr>
+            <div class="birhisse">
+                
+                <h1>Səhifədəki tələb olunan bir hissənin capi</h1>
+                <br>
+                <p>Bəzən də səhifədəki bütün məlumatların yox, səhifədəki yalnız bir hissənin, məsələn səhifədəki bir cədvəlin çap olunmasına ehtiyac duyulur. Bunu aşağıdakı şəkildə edə bilərik:
+                </p>
+            </div>
+            <div id="contentToPrint">
+                <!------h1 ve p teqlerinde yazilmis hissenin capi teleb olunursa-->
+                <h1>Dünyanın ilk neft paytaxtı...</h1>
+                <br>
+                <p> Bakının “qara qızıl” adlandırılan nefti, zəngin təbii sərvətləri, geosiyası cəhətdən əlverişli məkanda yerləşməsi, habelə Xəzər dənizi sahillərində mühüm hərbi - strateji əhəmiyyətə malik olması XVIII əsrin əvvəllərindən başlayaraq, Rusiyanın diqqətini cəlb edirdi. Bu məkana yiyələnməyə çalışan I Pyotr xüsusi hərbi dəniz ekspedisiyası yaradaraq, 1723-cü il iyunun 26-da Bakıya ordu yeridir. Lakin burda möhkəmlənə bilmir, geri qayıtmalı olur.</p>
+            </div>
+        
+            <p>Bakı haqqında danışarkən neftdən söz açmamaq mümkünsüzdür. Neft Uca Tanrının bu torpağa bəxş etdyi ən bol və şöhrətli təbii sərvətdir. Qədim zamanlardan çağdaş zəmanəmizədək Bakı neftinin şöhrəti dillər əzbəri olmuş, dünyanın diqqətini özünə cəlb etmişdir.</p>
+        
+            <button onclick="printElement('contentToPrint')">Print Content</button>
+            <div class="cap-pre">
+                <pre>        
+                    function printElement(elementId) {
+                    var element = document.getElementById(elementId);
+                    var originalContents = document.body.innerHTML;
+                    var printContents = element.innerHTML;
+                    document.body.innerHTML = printContents;
+                    window.print();
+                    document.body.innerHTML = originalContents;
+                }
+        </pre>
+            </div>
+          
+            <div class="birhisse"> 
+                <figure>
+                <img src="./img/birhisse.png" alt="" />
+                <figcaption>
+                    <p>Şəkil 3. Səhifədəki tələb olunan bir hissənin capi</p>
+                </figcaption>
+              </figure>
+            </div>
+                      
+    </section>
+    </main>
+    <script src="./app/page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New window</title>
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/new.css" />
+  </head>
+  <body>
+    <header>
+      <!-----NAVBAR BASLADI-->
+      <div class="navbar">
+        <div class="menu">
+          <nav>
+            <ul>
+              <li class="items"><a href="index.html">Window obyekti </a></li>
+              <li class="items"><a href="new.html">Yeni pəncərə </a></li>
+              <li class="items"><a href="resize.html">Resize to funksiyasi</a>
+                <li class="items"><a href="scroll.html">Scroll to funksiyası</a></li>
+                <li class="items"><a href="page.html">Scroll pozisyası </a></li>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-----NAVBAR BITDI-->
+    </header>
+    <main>
+      <section>
+        <div class="bosh">
+          <h1>Boş olan yeni bir pəncərənin yaradilmasi</h1>
+          <br />
+          <p>
+            İçərisi tamamilə boş olan yeni bir pəncərə yaradıb onun içərisini
+            sonradan doldurmağımız da mümkündür.
+          </p>
+          <button onclick="yeni1();">Yeni pencere aç</button>
+          <br />
+          <button onclick="bagla1();">Yeni pencereni bagla</button>
+          <div class="new">
+            <figure>
+              <img src="./img/new.png" alt="" />
+              <figcaption>
+                  <p>Şəkil 1. Boş olan yeni bir pəncərə  açılacaq</p>
+              </figcaption>
+            </figure>
+          </div>
+          <!--------------------------------->
+          <p>
+            Beləliklə, eni 200, uzunluğu 100 olan yeni pəncərə yaradırıq və onun
+            içərisinə məlumatlar yazırıq
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="./app/new.js"></script>
+  </body>
+</html>

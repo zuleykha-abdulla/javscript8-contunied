@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ResizeTo() funksiyasından</title>
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/resize.css" />
+  </head>
+  <body>
+    <header>
+      <!-----NAVBAR BASLADI-->
+      <div class="navbar">
+        <div class="menu">
+          <nav>
+            <ul>
+              <li class="items"><a href="index.html">Window obyekti </a></li>
+              <li class="items"><a href="new.html">Yeni pəncərə </a></li>
+              <li class="items"><a href="resize.html">Resize to funksiyasi</a></li>
+              <li class="items"><a href="scroll.html">Scroll to funksiyası</a></li>
+              <li class="items"><a href="page.html">Scroll pozisyası </a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-----NAVBAR BITDI-->
+    </header>
+    <main>
+      <section>
+        <div class="resize">
+          <h1>ResizeTo() funksiyası</h1>
+          <br>
+          <p>
+            Yaratdığımız bir pəncərənin ölçüsünü sonradan dəyişməyimiz
+            mümkündür. Bunun üçün resizeTo() funksiyasından istifadə edə bilərik
+          </p>
+        </div>
+        <button onclick="yeni();">Yeni pencere aç</button>
+        <br />
+        <button onclick="deyis();">Olcusunu deyis</button>
+        <div class="resize-top">
+            <div class="resize-img">
+              <figure>
+                <img src="./img/new2.png" alt="" />
+                <figcaption>
+                    <p>Şəkil 1. Yaratdığımız bir pəncərə</p>
+                </figcaption>
+              </figure>
+          </div>
+         
+         
+            <div class="img">
+              <figure>
+                <img src="./img/new3.png" alt="" />
+                <figcaption>
+                    <p>Şəkil 2. Yaratdığımız bir pəncərənin ölçüsü sonradan dəyişmiş </p>
+                </figcaption>
+              </figure>
+        </div>
+    </div>
+    <div class="info">
+      <p>Beləliklə, pəncərənin ölçüsü dəyişmiş olur. Növbəti olaraq pencere.focus();
+        yazaraq isə yenidən yeni pəncərəyə fokuslanmış oluruq.
+        </p></div>
+        
+      </section> 
+    <script src="./app/resize.js"></script>
+  </body>
+</html>
